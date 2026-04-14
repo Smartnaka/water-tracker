@@ -13,8 +13,7 @@
     },
     "preview": {
       "distribution": "internal",
-      "channel": "preview",
-      "platforms": ["android"]
+      "channel": "preview"
     },
     "production": {
       "autoIncrement": true,
