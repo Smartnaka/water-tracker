@@ -13,7 +13,7 @@ on:
           - all
           - ios
           - android
-        default: all
+        default: android
 
 jobs:
   build:
@@ -43,4 +43,4 @@ jobs:
           token: ${{ secrets.EXPO_TOKEN }}
 
       - name: Build on EAS
-        run: eas build --non-interactive --profile preview --platform ${{ inputs.platform || 'all' }}
+        run: eas build --non-interactive --profile preview --platform ${{ inputs.platform || 'android' }}

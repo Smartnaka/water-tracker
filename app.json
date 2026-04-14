@@ -54,19 +54,6 @@
         "origin": false
       },
       "eas": {
-        "build": {
-          "experimental": {
-            "ios": {
-              "appExtensions": [
-                {
-                  "bundleIdentifier": "com.betoatexpo.water-tracker.watch",
-                  "targetName": "watch",
-                  "entitlements": {}
-                }
-              ]
-            }
-          }
-        },
         "projectId": "ef1d9325-c9fe-44be-92ab-b73f3fb1b257"
       }
     }
