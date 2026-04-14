@@ -6,14 +6,6 @@ on:
       - main
   workflow_dispatch:
     inputs:
-      profile:
-        description: Build profile to use
-        type: choice
-        options:
-          - development
-          - preview
-          - production
-        default: preview
       platform:
         description: Platform to build for
         type: choice
@@ -51,4 +43,4 @@ jobs:
           token: ${{ secrets.EXPO_TOKEN }}
 
       - name: Build on EAS
-        run: eas build --non-interactive --profile ${{ inputs.profile || 'preview' }} --platform ${{ inputs.platform || 'all' }}
+        run: eas build --non-interactive --profile preview --platform ${{ inputs.platform || 'all' }}
